@@ -2,8 +2,8 @@ import requests
 
 # pip install requests
 
-city = input("\nEnter the city name : ")
-url = "https://wttr.in/{}".format(city)
+zipcode = input("\nEnter the zipcode : ")
+url = "https://wttr.in/{}".format(zipcode)
 try:
     res = requests.get(url)
     print(res.text)
